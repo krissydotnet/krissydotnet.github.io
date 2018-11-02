@@ -1,0 +1,313 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #252C3F;
+    color: #252C3F;
+    margin: 0;
+}
+
+
+.wrapper {
+    background-color: #F0EBDF;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Flexbox Navigation setup */
+main {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.sidenav {
+    flex-basis: 15%;
+    background-color:#252C3F;
+    color: #F0EBDF;
+}
+.sidenav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sidenav li {
+    text-align:center;
+}
+.sidenav a {
+    display: block;
+    line-height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #F0EBDF;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.sidenav a:hover {
+    color: #6D909C;
+    background-color: #F0EBDF 
+}
+.topnav {
+    background-color:#252C3F;
+    color: #F0EBDF;
+}
+.topnav ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.topnav li {
+    display: inline-block;
+}
+.topnav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #F0EBDF;
+    line-height: 3rem;
+    padding: .5rem .8rem;
+}
+.topnav a:hover {
+    color: #6D909C;
+    background-color: #F0EBDF 
+}
+.excerpt {
+    flex-basis: 85%;
+}
+.pageheader {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #252C3F;
+    color: #F0EBDF;
+   
+}
+.leftheader {
+    flex-basis: 60%;
+    align-self: center;
+    padding-left: 1.5rem;
+}
+
+
+h1.logo {
+    margin: auto 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    font-weight: normal;
+    color:  #EA8859; 
+    text-shadow: 2px 2px #6D909C;
+}
+.rightheader {
+    flex-basis: 40%;
+}
+.pageheader h1 {
+    margin: auto 0;
+}
+
+.pagefooter {
+    background-color: #252C3F;
+    color: #F0EBDF;
+    text-align: center;
+    padding: .4rem;
+}
+.copyright {
+    font-style: italic;
+}
+.disclaimer {
+    font-size: .6rem;
+}
+/* About Me Styles */
+.about .about-content {
+    margin: 1rem;
+}
+.about .portrait {
+    border-radius: 50%;
+    width: 12rem;
+    float: left;
+    padding: 0 1.5rem 1rem 1rem;
+}
+.about section h2 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .5rem;
+    font-size: 2rem;
+}
+.about section p {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5rem;
+}
+.about blockquote {
+    font-family: 'Oswald', sans-serif;
+}
+.about {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.about section {
+    flex-basis: 80%;
+}
+.about aside {
+    flex-basis: 20%;
+    background-color: #EA8859;
+}
+
+
+.about aside h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #F0EBDF;
+    text-shadow: 2px 2px #6D909C;
+    letter-spacing: .3rem;
+    
+}
+.about .favorite,
+.about .resources {
+    margin: 0 1rem;
+}
+.about ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+}
+.fas, .fab {
+    padding-right: .5rem;
+}
+.about .favorite li {
+    padding: .7rem 0;
+}
+.about .links a {
+    display: block;
+    padding: .7rem 0;
+}
+.about .links a:link {
+    text-decoration: none;
+    color:#252C3F;
+    font-weight: bold;
+}
+.about .links a:visited {
+    color: #252C3F;
+}
+.about .links a:hover {
+    color: #F0EBDF;
+}
+.about aside {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.about .favorite {
+    flex-basis: 50%;
+}
+.about .resources {
+    flex-basis: 50%;
+}
+
+
+/* Excerpt Page Styles */
+.excerpt header {
+    background-color: #EA8859; 
+    margin-bottom: 1rem;
+    margin: 0;
+}
+
+.container {
+    padding: 3rem; 
+}
+
+section .excerpt .container:after,
+.leftheader:after,
+.topnav:after {
+    content: "";
+    display: table;
+    clear: both; 
+}
+
+.excerpt header h1 {
+    margin: 0;
+    color: #F0EBDF;
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: .2rem;
+    padding: 1.3rem 0px;
+}
+.excerpt .intro {
+    margin: 0;
+    color: #F0EBDF;
+    background:  black url(https://drive.google.com/uc?export=view&id=19DoKmXlGrjbeJoqTVkL-ZQF95CLqlkDW) no-repeat left center;
+    background-size: contain;
+    padding-top: 3rem;
+    padding-left: 50%;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
+}
+.excerpt h3 {
+    color: #000515;
+}
+.excerpt ol {
+    padding-left: 3rem;
+}
+.excerpt li {
+    line-height: 1.8rem;
+}
+
+.excerpt img {
+    width: 20rem;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 2px 1px  #6D909C;
+}
+.excerpt .imgright {
+    float:right;
+    margin-left: 1rem;
+}
+.excerpt .imgleft {
+    float:left;
+    margin-right: 1rem;
+}
+
+
+.excerpt blockquote.quote {
+    background-color: #6D909C;
+    color: #F0EBDF;
+    padding: 1.3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    line-height: 2rem;
+    border-radius: 1rem;
+    font-style: italic;
+  
+}
+.excerpt p {
+    line-height: 1.5rem;
+}
+
+.excerpt a:link,
+.disclaimer a:link {
+    text-decoration: none;
+    color: #EA8859;
+    font-size: 1rem;
+}
+.excerpt a:visited,
+.disclaimer a:visited {
+    color: #EA8859;
+}
+.excerpt a:hover,
+.disclaimer a:hover {
+    color: #6D909C;
+}
+.excerpt footer {
+    font-style: italic;
+    font-size: .8rem;
+    border-top: 1px solid #252C3F;
+    margin-top: 3rem;
+    text-align: center;
+}
+/* Shared styles */
+blockquote.topquote {
+    padding-bottom: 1rem;
+}
+blockquote.topquote p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+    letter-spacing: .2rem;
+}
