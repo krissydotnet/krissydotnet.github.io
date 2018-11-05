@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cousine|Pacifico|Rubik|Oswald|Archivo+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="pageheader">
+                <div class="leftheader">
+
+                    <h1 class="logo">Bootcamp Projects</h1>
+                </div>
+                <div class="rightheader topnav">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="bookexcerpt.html">Excerpt</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+
+        <main class="contact">
+            <section>
+                <h1>Contact Form</h1>
+                <form action="submit.html" method="POST">
+                    <fieldset>
+                        <legend>Your contact information</legend>
+                        <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="First name">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email address">
+                    </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Opinion</legend>
+                        <h2>Give your honest opinion.  Rate on a scale of 1 to 5 with 5 being the best.</h2>
+                        <div class="form-row">
+                        <p>How would you rate the bootcamp?
+                        <label><input type="radio" name="rating" value=1> 1 </label>
+                        <label><input type="radio" name="rating" value=2> 2 </label>
+                        <label><input type="radio" name="rating" value=3> 3 </label>
+                        <label><input type="radio" name="rating" value=4> 4 </label>
+                        <label><input type="radio" name="rating" value=5> 5 </label>
+                    </p>
+                    </div>
+                    <div class="form-row">
+                        <label for="favorite">What was your favorite part of the bootcamp?</label>
+                        <select name="favorite" id="favorite">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="javascript">Javascript</option>
+                            <option value="projects">Projects</option>
+                        </select></div>
+                    <div class="form-row">
+                        <label for="comments">Comments on the bootcamp</label>
+                        <textarea id="comments" name="comments" placeholder="Enter comments here"></textarea>
+                    </div>
+                    <div class="form-row">
+                            <label><input type="checkbox" name="info" id="info">Send me info on future bootcamps.</label>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+
+
+        <footer class="pagefooter">
+            <p class="copyright">DotNetMomma - All rights reserved &copy; 2018</p>
+            <p class="disclaimer">This page was created as an exercise for <a href="https://frontendmasters.com/">Frontend
+                    Masters Bootcamp</a></p>
+        </footer>
+        </main>
+</body>
+
+</html>

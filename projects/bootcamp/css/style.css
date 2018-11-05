@@ -11,6 +11,75 @@ body {
     margin: 0 auto;
     width: 80%;
 }
+/* Home Page Styles */
+.home {
+    position: relative; 
+    z-index: 2;
+}
+.banner {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(..//images/pexels-photo-1068523.jpeg);
+    height: 500px;
+    width: 100%;
+    opacity: 0.5;
+
+}
+.menu h2 {
+    padding-top: 0;
+    font-size: 2rem;
+    border-bottom: 2px solid #EA8859; 
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu a {
+    text-decoration: none;
+    display:block;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #252C3F;
+}
+.menu a:hover {
+    color: #EA8859; 
+}
+.menu {
+    height: 500px;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+.menu-box {
+    margin: 5rem;
+    flex-basis: 48%;
+    background-color: #F0EBDF;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+.home blockquote  {
+    display: none;
+    padding: 0 4rem;
+    z-index: 2;
+    font-family: 'Oswald', sans-serif;
+    color:  black;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: .2rem;
+    margin: auto;
+    height: 500px;
+    opacity: 1;
+}
 
 /* Flexbox Navigation setup */
 main {
@@ -310,4 +379,80 @@ blockquote.topquote p {
     font-weight: bold;
     line-height: 2rem;
     letter-spacing: .2rem;
+}
+/* Contact Form styles */
+.contact {
+    padding: 1rem;
+    
+}
+.contact section {
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.contact h1, .contact legend {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .2rem;
+    font-weight: bold;
+}
+.contact h1 {
+    font-size: 1.75rem;
+}
+.contact legend {
+    font-size: 1.5rem;
+}
+.contact h2 {
+    font-size: 1rem;
+}
+.contact .form-row {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.contact [for='name'],
+.contact [for='email'] {
+    display: inline-block;
+    width: 10rem;
+}
+.contact input[type='text'],[type='email'] {
+    width: 20rem;
+}
+.contact [for="comments"] {
+    display: block;
+}
+
+.contact fieldset {
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+.contact textarea {
+    width: 100%;
+    height: 10rem;
+}
+
+.contact button {
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    padding: .5rem;
+    background-color: #EA8859;
+    border-radius: 1rem;
+    text-align: center;
+    color: #F0EBDF;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+}
+.contact button:hover {
+    background-color: #252C3F;
+}
+
+.contact [type="radio"] {
+    margin-left: 2rem;
+}
+.submit {
+    height: 100vh;
+    padding: 2rem;
 }
